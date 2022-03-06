@@ -132,3 +132,81 @@
 
 # print(f"{price}원 입니다.")
 
+
+#논리 연산자
+
+# a and b : 두개의 전제가 다 참이어야한다.
+# c or d : 둘 중 하나만 참이어도 된다.
+# not e : e가 거짓이면 참, 참이면 거짓
+
+# print("놀이공원에 오신걸 환영합니다.")
+# height = int(input("키가 몇 cm인가요? "))
+
+# if height>=120:
+#     print("입장을 환영합니다.")
+#     age = int(input("몇 세이신가요?"))
+#     if age>=20:
+#         price=10000
+#         if age>=70:
+#             price=0
+#     elif age>=14 and age<=19:
+#         price=8000
+#     else:
+#         price=6000
+        
+#     picture = input("사진을 찍으시겠습니까? Y,N ")
+#     if picture==("Y"):
+#         price+=3000
+#     else:
+#         price=price
+#     print(f"{price}원입니다.")
+        
+# else:
+#     print("죄송합니다 입장이 불가합니다.")
+
+
+# 사랑계산기
+# 본인 이름과 상대방의 이름을 적고 그 이름에 true,love 몇번 나오는지 세고 true *10 love 의 퍼센트만큼 서로 사랑한다고 계산해주는 계산기
+
+# lower 함수 -> 알파벳 대문자를 다 소문자로 바꾼다.
+# count 함수 -> 문자열에서 글자 나오는 횟수를 알려줌.ex) Kim.count(k) -> 0 대문자와 소문자 구별.
+
+# 10점 이하이거나 90점 이상이면 점수와 함께 콜라와 멘토스 같은 사이시네요.(최악이거나 찰떡이거나) 출력
+# 40-50점 사이면 점수와 함께 잘 어울리시네요. 출력
+# 나머지는 그냥 점수만 알려준다.
+
+# print("사랑계산기")
+# name1= input("what is your name? \n")
+# name2= input("what is your name? \n")
+
+# combined_string = name1+name2
+
+# low_string = combined_string.lower()
+
+# t = low_string.count("t")
+# r = low_string.count("r")
+# u = low_string.count("u")
+# e = low_string.count("e")
+
+# true =  t+r+u+e
+
+# l = low_string.count("l")
+# o = low_string.count("o")
+# v = low_string.count("v")
+# e = low_string.count("e")
+
+# love =  l+o+v+e
+
+# love_score = true*10+love
+# # love_score = int(str(true)+str(love)) 이렇게 해도 가능
+
+# if love_score <=10 or love_score>=90:
+#     print(f"당신의 사랑점수는 {love_score}, 콜라와 멘토스 같은 사이시네요.")
+# elif love_score>=40 and love_score<=50:
+#     print(f"당신의 사랑점수는 {love_score}, 잘 어울리세요")
+# else:
+#     print(f"당신의 사랑점수는 {love_score}")
+
+
+
+
