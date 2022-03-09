@@ -210,3 +210,34 @@ elif choose ==2:
     elif computer_choose ==0:
         print("당신이 졌습니다.")
 
+        
+        
+ ## 가위바위보 수정본
+
+choose = int(input("무엇을 내겠습니까? 주먹은 0, 보자기는 1, 가위는 2입니다. "))
+game_image = [rock, paper, scissors]
+if choose >=3 or choose < 0:
+    print("You typed an invalid number, you lose!")
+else:
+    print(game_image[choose])
+
+    
+    computer_choose = random.randint(0,2)
+    print("Computer choose : ")
+
+    print(game_image[computer_choose])
+    
+
+    if choose == 0 and computer_choose ==2:
+        print("you win")
+    elif choose == 2 and computer_choose ==0:
+        print("you lose")
+    elif computer_choose > choose:
+        print("you lose")
+    elif computer_choose < choose:
+        print("you win")
+    elif choose == computer_choose:
+        print("draw")
+
+
+
